@@ -60,6 +60,7 @@
         android:layout_marginLeft="40sp"/>
 
     <AutoCompleteTextView
+        android:id="@+id/stockname"
         android:layout_width="220sp"
         android:layout_height="wrap_content"
         android:background="@color/white"

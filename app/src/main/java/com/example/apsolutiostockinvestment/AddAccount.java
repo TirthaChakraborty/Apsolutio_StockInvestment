@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
@@ -13,6 +14,7 @@ import androidx.fragment.app.DialogFragment;
 
 public class AddAccount extends DialogFragment {
     private ImageButton close;
+    private AutoCompleteTextView compname;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,6 +26,8 @@ public class AddAccount extends DialogFragment {
                 dismiss();
             }
         });
+        compname=view.findViewById(R.id.stockname);
+        compname.setAdapter(new StockAutocompleteAdapter(getActivity()));
         return view;
     }
 

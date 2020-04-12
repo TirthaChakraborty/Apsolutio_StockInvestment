@@ -4,6 +4,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -45,8 +47,9 @@ import io.realm.Realm;
 //import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-    RadioGroup bottomnav;
-    Context context;
+    private RadioGroup bottomnav;
+    private Context context;
+
     private static  final int MY_PERMISSION_REQUEST_STORAGE=1;
 
     @Override
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         context = this;
 
+
         //set ActionBar
         ActionBar actionBar = getSupportActionBar(); // or getActionBar();
         getSupportActionBar().setTitle("Portfolio");
@@ -62,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
 
         navigate(bottomnav);
         FloatingActionButton myFab = (FloatingActionButton) findViewById(R.id.fb_add);
+        myFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogFragment addstock=new AddAccount();
+                FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+                addstock.show(fragmentTransaction,null);
+
+            }
+        });
 
         add(myFab);
 
@@ -153,28 +166,17 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void add(FloatingActionButton myFab){
-
-
         myFab.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                // custom dialog
-                final Dialog dialog = new Dialog(context);
-                dialog.setContentView(R.layout.popup_addaccount);
-                ImageButton dialogButton = (ImageButton) dialog.findViewById(R.id.closebtn);
-                // if button is clicked, close the custom dialog
-                dialogButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog.dismiss();
-                        Toast.makeText(getApplicationContext(),"Dismissed..!!",Toast.LENGTH_SHORT).show();
-                    }
-                });
-                dialog.show();
-                Window window = dialog.getWindow();
-                window.setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            @Override
+            public void onClick(View view) {
+                DialogFragment addstock=new AddAccount();
+                FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+                addstock.show(fragmentTransaction,null);
             }
         });
+
+
+
 
     }
 

@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Test"></activity>
+        <activity android:name=".DisplayStocksActivity"></activity>
     </application>
 
 </manifest>

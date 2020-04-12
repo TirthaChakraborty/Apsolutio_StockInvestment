@@ -1,37 +1,16 @@
 package com.example.apsolutiostockinvestment;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.os.Environment;
-import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.opencsv.CSVParser;
-import com.opencsv.CSVParserBuilder;
-import com.opencsv.CSVReader;
-import com.opencsv.CSVReaderBuilder;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.StringReader;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import io.realm.Realm;
 
 public class Test extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_displaystocks);
     }
 //    public void check(View view) {
 //

@@ -94,7 +94,8 @@
         android:textSize="18sp"
         android:layout_marginLeft="40sp"
         android:layout_marginTop="20sp"
-        android:fontFamily="@font/montserrat"/>
+        android:fontFamily="@font/montserrat"
+        android:inputType="number"/>
     </LinearLayout>
 
 
@@ -139,14 +140,15 @@
             android:id="@+id/unitprice"
             android:layout_width="220sp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
             android:background="@color/white"
+            android:fontFamily="@font/montserrat"
             android:hint="price"
             android:inputType="number"
             android:padding="10sp"
             android:textSize="18sp"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="20sp"
-            android:fontFamily="@font/montserrat"/>
+            />
 
         <TextView
             android:layout_width="wrap_content"

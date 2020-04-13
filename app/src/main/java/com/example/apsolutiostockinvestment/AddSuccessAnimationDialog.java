@@ -1,11 +1,15 @@
 package com.example.apsolutiostockinvestment;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,5 +32,14 @@ public class AddSuccessAnimationDialog extends DialogFragment {
     public void onStart() {
         super.onStart();
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+    }
+
+    @Override
+    public void onDismiss(@NonNull DialogInterface dialog) {
+
+
+
+        super.onDismiss(dialog);
+
     }
 }

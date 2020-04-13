@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         //code here
                         break;
                     case R.id.stocks:
-                        in = new Intent(MainActivity.this, Test.class);
+                        in = new Intent(MainActivity.this, DisplayStocksActivity.class);
                         startActivity(in);
                         overridePendingTransition(0, 0);
                         break;

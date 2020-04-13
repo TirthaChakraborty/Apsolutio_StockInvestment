@@ -1,4 +1,4 @@
-package com.example.apsolutiostockinvestment;
+package com.example.apsolutiostockinvestment.mainpackage;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,9 @@ import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.apsolutiostockinvestment.dialogs.AddStock;
+import com.example.apsolutiostockinvestment.R;
+import com.example.apsolutiostockinvestment.realmobjects.Stocks;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;

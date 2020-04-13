@@ -1,4 +1,6 @@
-package com.example.apsolutiostockinvestment;
+package com.example.apsolutiostockinvestment.apicalls;
+
+import com.example.apsolutiostockinvestment.apiresponse.BSEResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

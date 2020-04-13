@@ -1,6 +1,10 @@
-package com.example.apsolutiostockinvestment;
+package com.example.apsolutiostockinvestment.utility;
 
 import android.content.Context;
+
+import com.example.apsolutiostockinvestment.apicalls.APICallBSE;
+import com.example.apsolutiostockinvestment.apiresponse.BSEResponse;
+import com.example.apsolutiostockinvestment.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;

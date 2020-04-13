@@ -1,4 +1,4 @@
-package com.example.apsolutiostockinvestment;
+package com.example.apsolutiostockinvestment.dialogs;
 
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -16,6 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.apsolutiostockinvestment.R;
 
 public class AddSuccessAnimationDialog extends DialogFragment {
     @Nullable

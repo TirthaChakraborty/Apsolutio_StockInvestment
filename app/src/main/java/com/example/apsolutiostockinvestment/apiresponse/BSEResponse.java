@@ -1,4 +1,4 @@
-package com.example.apsolutiostockinvestment;
+package com.example.apsolutiostockinvestment.apiresponse;
 
 
 

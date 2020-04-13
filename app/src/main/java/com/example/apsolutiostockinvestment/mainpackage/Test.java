@@ -1,9 +1,11 @@
-package com.example.apsolutiostockinvestment;
+package com.example.apsolutiostockinvestment.mainpackage;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.apsolutiostockinvestment.R;
 
 public class Test extends AppCompatActivity {
 

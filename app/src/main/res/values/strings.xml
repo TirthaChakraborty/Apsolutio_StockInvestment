@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ApsolutioStockInvestment</string>
+    <string name="BSEApiKey">yyYxVA5LgX1astx3pZ5W</string>
 </resources>

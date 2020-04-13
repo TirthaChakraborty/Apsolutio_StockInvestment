@@ -1,4 +1,4 @@
-package com.example.apsolutiostockinvestment;
+package com.example.apsolutiostockinvestment.realmobjects;
 
 import java.sql.Time;
 import java.util.Date;

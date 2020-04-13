@@ -31,7 +31,6 @@
 
 
 
-
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="match_parent"
@@ -43,7 +42,8 @@
         android:foregroundGravity="bottom"
         android:gravity="bottom"
         android:orientation="horizontal"
-        android:padding="5sp">
+        android:padding="5sp"
+        >
 
       <RadioButton
           android:id="@+id/overview"
@@ -55,8 +55,9 @@
           android:gravity="center"
           android:paddingTop="5sp"
           android:text="Overview"
+          android:fontFamily="@font/montserrat"
           android:textColor="@color/white"
-          android:textSize="20sp"
+          android:textSize="18sp"
           android:textStyle="bold" />
 
       <RadioButton
@@ -66,11 +67,12 @@
           android:layout_weight="1"
           android:button="@null"
           android:checked="false"
+          android:fontFamily="@font/montserrat"
           android:gravity="center"
           android:paddingTop="3sp"
           android:text="Stocks"
           android:textColor="@color/white"
-          android:textSize="20sp"
+          android:textSize="18sp"
           android:textStyle="bold" />
 
       <RadioButton
@@ -83,30 +85,33 @@
           android:gravity="center"
           android:paddingLeft="2dp"
           android:paddingTop="5sp"
-          android:paddingRight="2dp"
+          android:paddingRight="2sp"
           android:paddingBottom="2dp"
           android:text="MFs"
+          android:fontFamily="@font/montserrat"
           android:textColor="@color/white"
-          android:textSize="20sp"
+          android:textSize="18sp"
           android:textStyle="bold" />
 
 
       <RadioButton
+
           android:id="@+id/ulip"
-          android:layout_width="274dp"
-          android:layout_height="239dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
           android:layout_weight="1"
           android:button="@null"
           android:checked="false"
+          android:fontFamily="@font/montserrat"
           android:gravity="center"
           android:paddingLeft="2dp"
           android:paddingTop="5sp"
-          android:paddingRight="2dp"
           android:paddingBottom="2dp"
           android:text="ULIP"
           android:textColor="@color/white"
-          android:textSize="20sp"
-          android:textStyle="bold" />
+          android:textSize="18sp"
+          android:textStyle="bold"
+          />
 
     </RadioGroup>
   </LinearLayout>

@@ -8,6 +8,11 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="20sp"
     android:layout_marginBottom="20sp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TableLayout
         android:id="@+id/tablelayout1"
         android:layout_width="wrap_content"
@@ -29,14 +34,7 @@
             android:fontFamily="@font/montserrat"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingRight="10dp"
-            android:text="Column2"
-            android:fontFamily="@font/montserrat"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+
 
         <TextView
             android:id="@+id/textView3"
@@ -106,15 +104,18 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
     </TableRow>
 </TableLayout>
-</HorizontalScrollView>
+
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:id="@+id/booking_recyclerview">
+        android:id="@+id/stock_recyclerview">
 
     </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</HorizontalScrollView>
 
 </LinearLayout>

@@ -108,12 +108,12 @@ public class AddAccount extends DialogFragment {
                 else {
                     unit = Double.parseDouble(num_of_units.getText().toString());
                 }
-                String s1 = s.toString();
-                if(s1.isEmpty()){
+                String s2 = s.toString();
+                if(s2.isEmpty()){
                     rate=0.0;
                 }
                 else {
-                    rate = Double.parseDouble(s1);
+                    rate = Double.parseDouble(s2);
                 }
                 double total_price = unit * rate;
 

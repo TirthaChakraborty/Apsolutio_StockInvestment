@@ -61,17 +61,17 @@ public class UserStockAdapter extends RecyclerView.Adapter<UserStockAdapter.MyVi
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
         UserStock userStocks=muserStocks.get(position);
 
-// egulo fill korish!!!!!
 
-//        holder.name.setText(userStocks.getStockname());
-//        holder.gain.setText();
-//        holder.units.setText(String.valueOf(userStocks.getUnits()));
-//        holder.mp.setText();
-//        holder.value.setText();
-//        holder.cagr.setText();
-//        holder.cwfd.setText();
-//        holder.fd.setText();
-//        holder.absolute_return.setText();
+
+        holder.name.setText(userStocks.getStockname());
+        holder.gain.setText("dummy data");
+        holder.units.setText(String.valueOf(userStocks.getUnits()));
+        holder.mp.setText("dummy data");
+        holder.value.setText("dummy data");
+        holder.cagr.setText("dummy data");
+        holder.cwfd.setText("dummy data");
+        holder.fd.setText("dummy data");
+        holder.absolute_return.setText("dummy data");
 
 
 

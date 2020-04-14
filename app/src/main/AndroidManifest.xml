@@ -3,6 +3,7 @@
     package="com.example.apsolutiostockinvestment">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".realmassignment.RealmAssignmentApplication"
@@ -19,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mainpackage.Test"></activity>
+
         <activity android:name=".mainpackage.DisplayStocksActivity"></activity>
 
         <meta-data

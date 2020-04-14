@@ -10,7 +10,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -38,6 +41,7 @@ import io.realm.Realm;
 public class MainActivity extends AppCompatActivity {
     private RadioGroup bottomnav;
     private Context context;
+    private RadioButton home;
 
     private static  final int MY_PERMISSION_REQUEST_STORAGE=1;
 
@@ -52,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar(); // or getActionBar();
         getSupportActionBar().setTitle("Portfolio");
         bottomnav = findViewById(R.id.radioGroup1);
+        home=findViewById(R.id.overview);
+
+        bottomnav.clearCheck();
+        home.setChecked(true);
 
         navigate(bottomnav);
         FloatingActionButton myFab = (FloatingActionButton) findViewById(R.id.fb_add);
@@ -98,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent in;
                 switch (checkid) {
                     case R.id.overview:
-                        //code here
+                        //this is the page
                         break;
                     case R.id.stocks:
                         in = new Intent(MainActivity.this, DisplayStocksActivity.class);
@@ -273,6 +281,24 @@ public class MainActivity extends AppCompatActivity {
             realm.close();
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch(item.getItemId()) {
+//              case R.id.exit:
+//            Intent intent = new Intent(context, ------.class);
+//            startActivity(intent);
+//            return(true);
+//
+//    }
+        return(super.onOptionsItemSelected(item));
     }
 
 

@@ -35,12 +35,13 @@
         android:orientation="vertical"
         android:visibility="visible">
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LOAD"
-            android:visibility="visible"
+            app:srcCompat="@drawable/data_loading1"
+            android:background="@color/transparent"
             android:layout_gravity="center"
+            android:layout_marginBottom="30sp"
             android:onClick="loadcsv"/>
 
 
@@ -128,10 +129,5 @@
 
         </RadioGroup>
     </LinearLayout>
-
-
-
-
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
